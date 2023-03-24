@@ -1,0 +1,138 @@
+body{
+    
+    background-color: beige;
+}
+
+nav{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 50px;;
+}
+
+.not1{
+    background-color: aqua;
+    font-style: italic;
+}
+
+.not1:hover{
+    background-color: purple;
+    font-style: italic;
+color: white;}
+
+.not2 {
+    background-color: pink;
+    font-style:normal;
+    font-size: larger;
+}
+
+.not2:hover {
+    background-color: red;
+    font-style:normal;
+    font-size: larger;
+}
+.not2:active {
+    background-color: blue;
+    font-style:normal;
+    font-size: larger;
+}
+
+p{
+    text-align: center;
+}
+div{
+    text-align: center;
+}
+
+
+.boi{
+
+    background-color: pink;
+}
+h1{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    padding: 50px;
+    text-align: center;
+    color: blue;
+    margin: 100px;
+    border: 10px dotted red;
+    box-shadow: 10px 5px 5px black;
+    top:0;
+    position: sticky;
+    background-color: white;
+}
+
+
+
+h1:hover{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150;
+    padding: 30;
+    text-align: center;
+    color: red;
+    margin: 100px;
+    border: 10px double blue;
+
+}
+
+img{
+border-radius: 20;
+    size: 50px 50px;
+    position: inherit;
+}
+
+.outside{
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+.outside > div{
+    margin: 10px;
+    padding: 20px;;
+    height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 75px;
+  
+}
+
+.i1{grid-area: header;}
+.i2{grid-area: menu;}
+.i3{grid-area: main;}
+.i4{grid-area: right;}
+.i5{grid-area: footer;}
+
+.grid{
+
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid > div{
+
+    background-color: azure;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.grid > div:hover{
+
+    background-color: pink;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
