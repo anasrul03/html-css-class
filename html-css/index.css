@@ -4,6 +4,12 @@ h1 {
   font-size: 1.5em;
 }
 
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  text-align: left;
+}
+
 .grid-container {
   position: relative;
   display: grid;
@@ -31,8 +37,15 @@ h1 {
   min-height: 40px;
   line-height: 20px;
 }
-
+#render_element {
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
 button {
+  position: relative;
+}
+.addButton {
   position: absolute;
   top: 0;
   border-radius: 5px;
