@@ -16,7 +16,7 @@ function buttonClick() {
   var divElemnt = document.createElement("div");
   var displayList = document.getElementById("render_element");
   var deleteButton = document.createElement("button");
-  let userObj = { task: task, id: generatingId };
+  let userObj = { task: task, id: generatingId, isChecked: false };
 
   // b = input.value;
   console.log("ButtonisCLICK!");
@@ -29,13 +29,12 @@ function buttonClick() {
   //render elements
   valueElement.innerText = task;
   renderElement.appendChild(valueElement);
-  renderElement.setAttribute("id", generatingId);
-  // console.log(valueElement);
-  displayList.appendChild(divElemnt);
+  valueElement.setAttribute("id", generatingId);
+  // displayList.appendChild(divElemnt);
 
   deleteButton.innerText = "Delete";
   renderElement.appendChild(deleteButton);
-  deleteButton.setAttribute("id", generatingId);
+  // deleteButton.setAttribute("id", generatingId);
 
   deleteButton.addEventListener("click", function () {
     deleteFromList();
@@ -73,12 +72,9 @@ function buttonClick() {
 
 function deleteFromList() {
   console.log("deleteButtonClick");
-  // var i = todoList.indexOf(input);
-  var getID = todoList.getElementById();
+  var getID = document.getElementById("taskisSet").getAttribute("id").value;
 
-  console.log(getID);
-  // console.log(i);
-  // console.log(getID);
+  console.log(getID + " deleted");
 }
 
 function myFunction() {
