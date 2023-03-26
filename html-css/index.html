@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>Todo List</title>
   </head>
   <body>
     <h1>Your To-do List</h1>
@@ -18,7 +18,12 @@
       <div class="grid-item">
         <!-- <label for=""> Insert your to-do list here</label> -->
 
-        <input type="text" id="inputText" placeholder="What to do?" />
+        <input
+          type="text"
+          id="inputText"
+          onfocus="this.value"
+          placeholder="What to do?"
+        />
         <button class="addButton" onclick="buttonClick()">Add</button>
       </div>
       <div class="grid-item">2</div>
