@@ -5,15 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/49c37c2552.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="form">
-      <input type="text" placeholder="name" id="nameText" />
-      <button onclick="buttonClick()">Submit</button>
-      <div id="render_element"></div>
+    <h1>Your To-do List</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <!-- <label for=""> Insert your to-do list here</label> -->
+        <input type="text" id="inputText" placeholder="What to do?" />
+        <button onclick="buttonClick()">Add</button>
+      </div>
+      <div class="grid-item">2</div>
+      <div class="grid-item"><div id="render_element"></div></div>
+      <div class="grid-item">4</div>
     </div>
+
+    <!-- <div id="demo"></div> -->
   </body>
   <script src="index.js"></script>
 </html>

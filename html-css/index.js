@@ -4,33 +4,32 @@ console.log("javascript is connected!");
 
 // console.log("buttonClickisRun");
 // };
-let array = ['test'];
-let renderElement = document.getElementById('render_element');
+let todoList = [];
+let renderElement = document.getElementById("render_element");
 
+function buttonClick() {
+  const input = document.getElementById("inputText").value;
+  // b = input.value;
+  console.log("ButtonisCLICK!");
+  console.log(input);
+  todoList.push(input);
+  console.log(todoList);
 
-function buttonClick(){
-    
-    const input = document.getElementById('nameText').value;
-    // b = input.value;
-    console.log("ButtonisCLICK!");
-    console.log(input);
-    array.push(input);
-    console.log(array);
+  //render elements
+  var valueElement = document.createElement("span");
+  valueElement.innerText = input;
+  renderElement.appendChild(valueElement);
+  console.log(valueElement);
 
-
-//render elements
-    var divElemnt = document.createElement('div');
-    var valueElement = document.createElement('span');
-    valueElement.innerText = input;
-console.log(valueElement);
-    renderElement.appendChild(valueElement);
-
-
-
-    var list = document.getElementById('render_element');
-    list.appendChild(divElemnt);
+  var divElemnt = document.createElement("div");
+  var displayList = document.getElementById("render_element");
+  displayList.appendChild(divElemnt);
 }
 
+function myFunction() {
+  var x = document.getElementById("inputText").value;
+  document.getElementById("demo").innerHTML = x;
+}
 // const lalaa = () =>{
 
 //     const input = document.getElementById('nameText').value;
