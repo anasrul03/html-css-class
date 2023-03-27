@@ -11,7 +11,6 @@ function buttonClick() {
   var valueElement = document.createElement("span");
   var divElemnt = document.createElement("div");
   var checkbox = document.createElement("input");
-  var space = document.createElement("br");
   var deleteButton = document.createElement("button");
   var input = document
     .createElement("input")
@@ -27,20 +26,20 @@ function buttonClick() {
   console.log(todoList);
 
   //render elements
-  renderElement.appendChild(space);
-
-  renderElement.appendChild(checkbox);
+  renderElement.appendChild(divElemnt);
+  divElemnt.appendChild(checkbox);
+  divElemnt.appendChild(valueElement);
+  divElemnt.appendChild(deleteButton);
+  divElemnt.setAttribute("class", "listDiv");
+  // renderElement.appendChild(checkbox);
   checkbox.setAttribute("type", "checkbox");
-  // valueElement.innerText = task;
   valueElement.innerText = task;
-  renderElement.appendChild(valueElement);
-  valueElement.setAttribute("id", generatingId);
+  // renderElement.appendChild(valueElement);
+
   valueElement.setAttribute("class", "taskList");
 
   console.log(input);
-  // displayList.appendChild(divElemnt);
-  // deleteButton.innerText = "fa-solid fa-trash";
-  renderElement.appendChild(deleteButton);
+
   deleteButton.setAttribute("class", "deleteButton");
 
   deleteButton.addEventListener("click", function () {
