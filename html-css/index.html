@@ -13,25 +13,23 @@
     <title>Todo List</title>
   </head>
   <body>
-    <h1>Your To-do List</h1>
     <div class="grid-container">
-      <div class="grid-item">
-        <!-- <label for=""> Insert your to-do list here</label> -->
-
+      <div class="item1">
+        <h1>Your To-do List</h1>
         <input
           type="text"
           id="inputText"
           onfocus="this.value"
           placeholder="What to do?"
         />
-        <button class="addButton" onclick="buttonClick()">Add</button>
+        <button class="addButton" onclick="buttonClick()">
+          <i class="fa-sharp fa-solid fa-plus"></i>
+        </button>
       </div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">
-        <h2>Have you done this?</h2>
+      <div class="item2">Menu</div>
+      <div class="item3">
         <div id="render_element"></div>
       </div>
-      <div class="grid-item">4</div>
     </div>
 
     <!-- <div id="demo"></div> -->

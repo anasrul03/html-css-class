@@ -13,6 +13,9 @@ function buttonClick() {
   var checkbox = document.createElement("input");
   var space = document.createElement("br");
   var deleteButton = document.createElement("button");
+  var input = document
+    .createElement("input")
+    .setAttribute("class", "fa-solid fa-trash");
   let userObj = { task: task, id: generatingId, isChecked: false };
 
   // b = input.value;
@@ -28,16 +31,17 @@ function buttonClick() {
 
   renderElement.appendChild(checkbox);
   checkbox.setAttribute("type", "checkbox");
-
   // valueElement.innerText = task;
-  valueElement.innerHTML = task;
+  valueElement.innerText = task;
   renderElement.appendChild(valueElement);
   valueElement.setAttribute("id", generatingId);
-  // displayList.appendChild(divElemnt);
+  valueElement.setAttribute("class", "taskList");
 
-  deleteButton.innerText = "Delete";
+  console.log(input);
+  // displayList.appendChild(divElemnt);
+  // deleteButton.innerText = "fa-solid fa-trash";
   renderElement.appendChild(deleteButton);
-  // deleteButton.setAttribute("id", generatingId);
+  deleteButton.setAttribute("class", "deleteButton");
 
   deleteButton.addEventListener("click", function () {
     deleteFromList();
