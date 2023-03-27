@@ -1,0 +1,129 @@
+body {
+  margin: 100px;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  text-align: left;
+}
+
+#inputText {
+  padding: 10px;
+  margin: 10px 0px;
+  float: left;
+  width: 80%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  display: block;
+  justify-content: left;
+  overflow: scroll;
+  resize: both;
+  min-height: 40px;
+  line-height: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+#render_element {
+  border: 1px solid #ff0000;
+  padding: 70px 0;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+  overflow: scroll;
+}
+
+/* button {
+  position: relative;
+} */
+.addButton {
+  margin: 10px 40px 5px 20px;
+  justify-content: right;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  /* right: 780px; */
+  z-index: 2;
+  border: none;
+  top: 18px;
+  height: 55px;
+  width: 10%;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  /* transform: translateX(5px); */
+}
+
+.deleteButton {
+  float: right;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  color: white;
+  background-color: #ff0000;
+}
+
+.checkbox {
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header header" "menu menu main main main main" "menu menu main main main main";
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.grid-container div {
+  background-color: 0;
+  text-align: center;
+  padding: 20px 30px;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px grey;
+}
+.grid-container__item1 {
+  grid-area: header;
+}
+.grid-container__item2 {
+  grid-area: menu;
+  width: 600px;
+}
+.grid-container__item3 {
+  padding: 50px 10px;
+  grid-area: main;
+  width: 1000px;
+}
+
+.listDiv {
+  border: 1px solid black;
+  margin: 10px 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.taskList {
+  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid green;
+  width: 800px;
+  word-break: break-all;
+}
+
+/*# sourceMappingURL=styles.css.map */

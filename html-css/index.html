@@ -9,26 +9,28 @@
       src="https://kit.fontawesome.com/49c37c2552.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Todo List</title>
   </head>
   <body>
-    <div class="grid-container">
-      <div class="item1">
-        <h1>Your To-do List</h1>
-        <input
-          type="text"
-          id="inputText"
-          onfocus="this.value"
-          placeholder="What to do?"
-        />
-        <button class="addButton" onclick="buttonClick()">
-          <i class="fa-sharp fa-solid fa-plus"></i>
-        </button>
-      </div>
-      <div class="item2">List</div>
-      <div class="item3">
-        <div id="render_element"></div>
+    <div class="whole-card">
+      <div class="grid-container">
+        <div class="grid-container__item1">
+          <h1>Your To-do List</h1>
+          <input
+            type="text"
+            id="inputText"
+            onfocus="this.value"
+            placeholder="What to do?"
+          />
+          <button class="addButton" onclick="buttonClick()">
+            <i class="fa-sharp fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="grid-container__item2">List</div>
+        <div class="grid-container__item3">
+          <div id="render_element"></div>
+        </div>
       </div>
     </div>
 

@@ -33,6 +33,7 @@ function buttonClick() {
   divElemnt.setAttribute("class", "listDiv");
   // renderElement.appendChild(checkbox);
   checkbox.setAttribute("type", "checkbox");
+  checkbox.setAttribute("class", "checkbox");
   valueElement.innerText = task;
   // renderElement.appendChild(valueElement);
 

@@ -1,0 +1,24 @@
+{
+  "name": "besquare-scss-sample-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass main.scss styles.css",
+    "sass:watch": "sass main.scss styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamid-deriv/besquare-scss-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamid-deriv/besquare-scss-sample/issues"
+  },
+  "homepage": "https://github.com/hamid-deriv/besquare-scss-sample#readme",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}
