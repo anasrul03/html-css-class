@@ -31,22 +31,21 @@ function buttonClick() {
   divElemnt.appendChild(valueElement);
   divElemnt.appendChild(deleteButton);
   divElemnt.setAttribute("class", "listDiv");
-  // renderElement.appendChild(checkbox);
   checkbox.setAttribute("type", "checkbox");
   checkbox.setAttribute("class", "checkbox");
   valueElement.innerText = task;
-  // renderElement.appendChild(valueElement);
 
   valueElement.setAttribute("class", "taskList");
 
-  console.log(input);
+  // console.log(input);
 
   deleteButton.setAttribute("class", "deleteButton");
 
   deleteButton.addEventListener("click", function () {
     deleteFromList();
-
-    console.log("The id for this task is " + generatingId);
+    // renderElement.appendChild(checkbox);
+    // renderElement.appendChild(valueElement);
+    // console.log("The id for this task is " + generatingId);
   });
 
   document.getElementById("inputText").value = "";
@@ -55,9 +54,9 @@ function buttonClick() {
 //Delete from Array todolist
 function deleteFromList() {
   console.log("deleteButtonClick");
-  var getID = document.getElementById("taskisSet").getAttribute("id").value;
+  // var getID = document.getElementById("taskisSet").getAttribute("id").value;
 
-  console.log(getID + " deleted");
+  // console.log(getID + " deleted");
 }
 
 // function myFunction() {
